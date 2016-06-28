@@ -1,0 +1,22 @@
+Package: semigeom
+Title: Semigeometric tiling of data matrices
+Version: 0.1.0
+Description: This package provides functions for performing semigeometric
+    tilings of data matrices.
+Authors@R: c(person("Andreas", "Henelius", role = c("aut", "cre"), email = "andreas.henelius@iki.fi"),
+             person("Antti", "Ukkonen", role = c("aut"), email = "antti.ukkonen@ttl.fi"),
+	     person("Kai", "Puolamaki", role = c("aut"), email = "kaip@iki.fi"),
+	     person("Finnish Institute of Occupational Health", role = c("cph")))
+Depends:
+    R (>= 3.2.4),
+    compiler,
+    parallel,
+    seriation,
+    clue,
+    R.utils,
+    TTR,
+    plyr,
+Encoding: UTF-8
+License: MIT + file LICENSE
+URL: https://github.com/bwrc/semigeom-r
+RoxygenNote: 5.0.1

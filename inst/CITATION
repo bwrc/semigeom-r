@@ -1,0 +1,11 @@
+bibentry(bibtype = "inproceedings",
+         title = "Semigeometric Tiling of Event Sequences",
+         author = c(person("Andreas", "Henelius"),
+                    person("Isak", "Karlsson"),
+                    person("Panagiotis", "Papapetrou"),
+                    person("Antti", "Ukkonen"),
+                    person("Kai", "Puolamäki")),
+         year = 2016,
+         booktitle="European Conference on Machine Learning and Knowledge Discovery in Databases",
+         publisher="Springer"
+         )
