@@ -31,8 +31,7 @@ install_github("bwrc/semigeom-r")
 
 Examples
 ---------
-This is a short example demonstrating
-To read data data recorded in the EDF format:
+This is a short example demonstrating the library:
 
 ```R
 ## Load the library
