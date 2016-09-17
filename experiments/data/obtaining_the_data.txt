@@ -1,0 +1,42 @@
+(1) Stock index data.
+Download the file
+www.economicswebinstitute.org/data/stockindexes.zip
+Then configure and run the script "make_stockindices.R" which generates the file "/tmp/stock_exchange_index.csv".
+Place this file in the data directory.
+
+
+(2) Stock price data
+Run the script "make_stocprices.R" which generates the file "/tmp/stockdata.rds".
+Place this file in the data directory.
+
+
+(3) Paleo data
+Download the file
+http://www.cis.hut.fi/projects/patdis/paleo/mcmc-plcb.tar.gz
+and from this package place the files
+
+g10s10.genus
+g10s10.sites
+g10s10.txt
+
+in the data directory.
+
+
+(4) EEG data
+From the page
+http://sleeptight.isr.uc.pt/ISRUC_Sleep/?page_id=48
+Download the data for subjects 1 to 10 from Subgroup 3:
+http://sleeptight.isr.uc.pt/ISRUC_Sleep/ISRUC_Sleep/subgroupIII/1.rar
+...
+http://sleeptight.isr.uc.pt/ISRUC_Sleep/ISRUC_Sleep/subgroupIII/10.rar
+
+and extract the contents of these data files in the respective folders
+
+1.rar --> data/eeg/subgroup_3/s1    [data for subject 1]
+...
+10.rar --> data/eeg/subgroup_3/s10    [data for subject 10]
+
+
+Then run the script "make_eeg.R" to generate the file "/tmp/eeg-alpha.rds".
+Place this file in the data directory.
+
