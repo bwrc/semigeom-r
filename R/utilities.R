@@ -91,6 +91,29 @@ tiles2ind <- function(tiles, m_dim) {
     unique(unlist(lapply(tiles, function(tile) tile2ind(tile, m_dim))))
 }
 
+
+#' Discretize matrix according to letter.
+#'
+#' Given a discrete matrix, discretize it so that any element matching
+#' letter is set to one and otherwise to zero.
+#'
+#' @param x A data matrix.
+#' @param letter A letter for discretizing.
+#'
+#' @return A binary matrix.
+#'
+#' @export
+discretize_letter <- function(x, letter) {
+    out <- matrix(0, nrow = nrow(x), ncol = ncol(x))
+    out[which(x == letter)] <- 1
+
+    rownames(out) <- rownames(x)
+    colnames(out) <- colnames(x)
+
+    out
+}
+
+
 #' Get tiling functions.
 #'
 #' Get the MaxTile and GlobalTile functions as a list.
